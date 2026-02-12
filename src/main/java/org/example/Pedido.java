@@ -1,38 +1,38 @@
 package org.example;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 class Pedido{
     private String numero;
-    List <Productos> Producto;
+    List<Producto> productos=new ArrayList<>();
 
     public Pedido() {
     }
-    public Pedido(String numero, list<productos> producto) {
+    public Pedido(String numero) {
         this.numero = numero;
-        this.producto = producto;
+        this.productos = new ArrayList<>();
     }
 
     public String getNumero() {
         return numero;
     }
 
-    public list<productos> getProducto() {
-        return producto;
+    public List<Producto> getProducto() {
+        return productos;
     }
 
     public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public void setProducto(list<productos> producto) {
-        this.producto = producto;
+    public void setProducto(List<Producto> producto) {
+        this.productos = producto;
     }
 
     public void AgrProd(Producto producto){
-        this.producto.add (productos);
+        this.productos.add (producto);
     }
-    public void mostrardetalles(Producto producto){
 
-    }
 }
