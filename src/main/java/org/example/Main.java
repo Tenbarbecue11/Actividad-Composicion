@@ -23,7 +23,7 @@ public class Main {
         for(Object e: pe1.getProducto()){
             System.out.print(e.toString());
         }
-        //y en está los productos de la segunda orden
+        //y en está los productos de la sexgunda orden
         System.out.print("Productos de la orden "+ pe2.getNumero() + "=");
         for(Object e: pe2.getProducto()){
             System.out.print(e.toString());
